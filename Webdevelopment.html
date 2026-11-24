@@ -1,0 +1,343 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Webdevelopment.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">✓</span>
+                <h2>TaskFlow</h2>
+            </div>
+
+            <p class="menu-heading">MENU</p>
+
+            <nav class="navigation">
+                <a href="#dashboard" class="nav-link active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="#tasks" class="nav-link">
+                    <span>☷</span> My Tasks
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    <span>▤</span> Categories
+                </a>
+
+                <a href="#calendar" class="nav-link">
+                    <span>▦</span> Calendar
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile">
+                    <div class="avatar">IG</div>
+
+                    <div>
+                        <h4>Student Name</h4>
+                        <p>Isuli Gunasekara</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content" id="dashboard">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div>
+                    <p class="welcome">Welcome back!</p>
+                    <h1>Student Dashboard</h1>
+                    <p class="subtitle">
+                        Organize your studies and achieve your goals.
+                    </p>
+                </div>
+
+                <div class="header-right">
+
+                    <a href="academic-schedule.html" class="nav-link academic-planner-btn">
+                    <span>▦</span> Academic Schedule</a>
+
+                    <div class="notification">🔔</div>
+                </div>
+                
+            </header>
+
+
+            <!-- STATISTICS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">☷</div>
+                    <p>Total Tasks</p>
+                    <h2>24</h2>
+                    <span class="stat-description">All academic tasks</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">◷</div>
+                    <p>Pending Tasks</p>
+                    <h2>12</h2>
+                    <span class="stat-description">Tasks to complete</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <p>Completed Tasks</p>
+                    <h2>08</h2>
+                    <span class="stat-description">Successfully completed</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">!</div>
+                    <p>Upcoming Deadlines</p>
+                    <h2>04</h2>
+                    <span class="stat-description">Due soon</span>
+                </div>
+
+            </section>
+
+
+            <!-- TASK SECTION -->
+            <section class="task-section" id="tasks">
+
+                <div class="section-header">
+                    <div>
+                        <h2>My Tasks</h2>
+                        <p>Manage your academic activities.</p>
+                    </div>
+
+                    <a href="#add-task" class="add-button">
+                        + Add New Task
+                    </a>
+                </div>
+
+
+                <!-- FILTERS -->
+                <div class="filters">
+                    <button class="filter active">All Tasks</button>
+                    <button class="filter">Pending</button>
+                    <button class="filter">Completed</button>
+                </div>
+
+
+                <!-- TASK TABLE -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Task Name</th>
+                                <th>Category</th>
+                                <th>Due Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Java Programming Assignment</strong>
+                                    <small>Complete practical exercises</small>
+                                </td>
+                                <td><span class="category">Assignment</span></td>
+                                <td>25 Nov 2026</td>
+                                <td><span class="priority high">High</span></td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Database Project</strong>
+                                    <small>Design database structure</small>
+                                </td>
+                                <td><span class="category">Project</span></td>
+                                <td>28 Nov 2026</td>
+                                <td><span class="priority medium">Medium</span></td>
+                                <td><span class="status progress">In Progress</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Web Development Quiz</strong>
+                                    <small>Prepare HTML and CSS notes</small>
+                                </td>
+                                <td><span class="category">Examination</span></td>
+                                <td>30 Nov 2026</td>
+                                <td><span class="priority high">High</span></td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Networking Report</strong>
+                                    <small>Complete research report</small>
+                                </td>
+                                <td><span class="category">Assignment</span></td>
+                                <td>20 Nov 2026</td>
+                                <td><span class="priority low">Low</span></td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOTTOM SECTION -->
+            <section class="bottom-grid">
+
+                <!-- PROGRESS -->
+                <div class="content-card">
+                    <h2>Overall Progress</h2>
+                    <p>Your academic productivity this month.</p>
+
+                    <div class="progress-info">
+                        <strong>67%</strong>
+                        <span>Completion rate</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <p class="progress-note">
+                        Keep going! You are making great progress.
+                    </p>
+                </div>
+
+
+                <!-- UPCOMING -->
+                <div class="content-card">
+                    <h2>Upcoming Deadlines</h2>
+                    <p>Stay ahead of your academic schedule.</p>
+
+                    <div class="deadline-item">
+                        <div class="deadline-date">
+                            <strong>25</strong>
+                            <span>NOV</span>
+                        </div>
+
+                        <div>
+                            <strong>Java Assignment</strong>
+                            <small>Programming</small>
+                        </div>
+                    </div>
+
+                    <div class="deadline-item">
+                        <div class="deadline-date">
+                            <strong>28</strong>
+                            <span>NOV</span>
+                        </div>
+
+                        <div>
+                            <strong>Database Project</strong>
+                            <small>Database Systems</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ADD TASK FORM -->
+            <section class="content-card add-task-section" id="add-task">
+
+                <h2>Add a New Task</h2>
+                <p>Use this form as the initial task-entry interface.</p>
+
+                <form>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="task-name">Task Name</label>
+                            <input
+                                type="text"
+                                id="task-name"
+                                placeholder="Enter task name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category</label>
+
+                            <select id="category">
+                                <option>Assignment</option>
+                                <option>Project</option>
+                                <option>Examination</option>
+                                <option>Personal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="due-date">Due Date</label>
+                            <input type="date" id="due-date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="priority">Priority</label>
+
+                            <select id="priority">
+                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="add-button">
+                        Add Task
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer>
+                <p>
+                    © 2026 TaskFlow | Student Task Management System
+                </p>
+                <p>Designed for better academic productivity.</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
+
